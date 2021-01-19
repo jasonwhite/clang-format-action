@@ -18,7 +18,5 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  env:
-    CLANG_FORMAT_VERSION: ${{ inputs.clang-format-version }}
   args:
     - ${{ inputs.check-path }}
