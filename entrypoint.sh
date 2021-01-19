@@ -30,10 +30,6 @@ format_diff() {
 
 CHECK_PATH="$1"
 
-# Install clang-format
-echo "Installing clang-format-$CLANG_FORMAT_VERSION"
-apt-get update && apt-get install -y --no-install-recommends clang-format-"$CLANG_FORMAT_VERSION"
-
 cd "$GITHUB_WORKSPACE" || exit 2
 
 if [[ ! -d "$CHECK_PATH" ]]; then
