@@ -6,7 +6,7 @@ branding:
   color: "blue"
 
 inputs:
-  clang-format-version:
+  clang_format_version:
     description: 'The version of clang-format that you want to use.'
     required: false
     default: '10'
